@@ -43,7 +43,7 @@ export default class Library {
     }
 
     #AddNewBook() {
-        if(this.haveFreeSpace == true){
+        if(this.haveFreeSpace == true) {
             this.bookCount++;
         }
         else{

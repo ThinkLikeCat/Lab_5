@@ -4,7 +4,7 @@ export default class LibraryCabinet extends Library {
         super(famousBook, bookCount, haveFreeSpace);
         this.shelfCount = shelfCount;
     } 
-    get ShelfCount(){
+    get ShelfCount() {
         return this.shelfCount;
     }
     set ShelfCount(shelfCount){
