@@ -8,6 +8,7 @@ export default class Library {
     get FamousBook() {
         return this.famousBook;
     }
+
     set FamousBook(value) {
         this.famousBook = value;
     }   
@@ -17,7 +18,7 @@ export default class Library {
     }
 
     set BookCount(value) {
-        if(value > 0) {
+        if (value > 0) {
             this.bookCount = value;
         }
     }
@@ -30,28 +31,28 @@ export default class Library {
         this.haveFreeSpace = value;
     }
     
-    show() {
+    Show() {
         console.log(`${this.famousBook} ${this.bookCount} ${this.haveFreeSpace}`);
     }
 
-    copy() {
+    Copy() {
         return this;
     }
 
-    delete() {
+    Delete() {
         this.deleted = true;
     }
 
     #AddNewBook() {
-        if(this.haveFreeSpace == true){
+        if (this.haveFreeSpace == true) {
             this.bookCount++;
         }
-        else{
+        else {
             console.log("So much books in library");
-        }   
+        }
     }
     
-    clone() {
+    Clone() {
         return Library(this.famousBook,this.bookCount,this.haveFreeSpace);
     }
 }
